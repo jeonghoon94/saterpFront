@@ -56,6 +56,9 @@ License: You must have a valid license purchased only from themeforest(the above
 
 		<!--end:: Global Mandatory Vendors -->
 
+		<!-- begin:: Vendors used by this page -->
+		<link href="./assets/vendors/general/socicon/css/socicon.css" rel="stylesheet" type="text/css" />
+
 		<!--begin::Global Theme Styles(used by all pages) -->
 		<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 
@@ -91,89 +94,21 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									<div class="kt-login__signin">
 										<div class="kt-login__head">
-											<h3 class="kt-login__title">Sign In To SATERP</h3>
+											<h3 class="kt-login__title">Sign In SATERP</h3>
 										</div>
-										<div class="kt-login__form">
-											<form class="kt-form" action="">
-												<div class="form-group">
-													<input class="form-control" type="text" placeholder="Email" name="email" autocomplete="off">
-												</div>
-												<div class="form-group">
-													<input class="form-control form-control-last" type="password" placeholder="Password" name="password">
-												</div>
-												<div class="kt-login__extra">
-													<label class="kt-checkbox">
-														<input type="checkbox" name="remember"> Remember me
-														<span></span>
-													</label>
-													<a href="javascript:;" id="kt_login_forgot">Forget Password ?</a>
-												</div>
-												<div class="kt-login__actions">
-													<button id="kt_login_signin_submit" class="btn btn-brand btn-pill btn-elevate">Sign In</button>
-												</div>
-												<!--GOOGLE social login-->
-												<div class="kt-login__actions">
-													<button id="google_signin_submit" class="btn btn-brand btn-pill btn-elevate">Google Login</button>
-												</div>
-											</form>
+										<div class="kt-login__actions">
+											<a href="/oauth2/authorization/google" class="btn btn-google btn-elevate"><i class="socicon-google">&nbsp;&nbsp;&nbsp;&nbsp;</i>Google Login</a>
 										</div>
 									</div>
-									<div class="kt-login__signup">
-										<div class="kt-login__head">
-											<h3 class="kt-login__title">Sign Up</h3>
-											<div class="kt-login__desc">Enter your details to create your account:</div>
-										</div>
-										<div class="kt-login__form">
-											<form class="kt-form" action="">
-												<div class="form-group">
-													<input class="form-control" type="text" placeholder="Fullname" name="fullname">
-												</div>
-												<div class="form-group">
-													<input class="form-control" type="text" placeholder="Email" name="email" autocomplete="off">
-												</div>
-												<div class="form-group">
-													<input class="form-control" type="password" placeholder="Password" name="password">
-												</div>
-												<div class="form-group">
-													<input class="form-control form-control-last" type="password" placeholder="Confirm Password" name="rpassword">
-												</div>
-												<div class="kt-login__extra">
-													<label class="kt-checkbox">
-														<input type="checkbox" name="agree"> I Agree the <a href="#">terms and conditions</a>.
-														<span></span>
-													</label>
-												</div>
-												<div class="kt-login__actions">
-													<button id="kt_login_signup_submit" class="btn btn-brand btn-pill btn-elevate">Sign Up</button>
-													<button id="kt_login_signup_cancel" class="btn btn-outline-brand btn-pill">Cancel</button>
-												</div>
-											</form>
-										</div>
-									</div>
-									<div class="kt-login__forgot">
-										<div class="kt-login__head">
-											<h3 class="kt-login__title">Forgotten Password ?</h3>
-											<div class="kt-login__desc">Enter your email to reset your password:</div>
-										</div>
-										<div class="kt-login__form">
-											<form class="kt-form" action="">
-												<div class="form-group">
-													<input class="form-control" type="text" placeholder="Email" name="email" id="kt_email" autocomplete="off">
-												</div>
-												<div class="kt-login__actions">
-													<button id="kt_login_forgot_submit" class="btn btn-brand btn-pill btn-elevate">Request</button>
-													<button id="kt_login_forgot_cancel" class="btn btn-outline-brand btn-pill">Cancel</button>
-												</div>
-											</form>
-										</div>
-									</div>
+									
 								</div>
 							</div>
 							<div class="kt-login__account">
 								<span class="kt-login__account-msg">
-									Don't have an account yet ?
+									SATEP 이용을 위해
 								</span>&nbsp;&nbsp;
-								<a href="javascript:;" id="kt_login_signup" class="kt-login__account-link">Sign Up!</a>
+								<a href="javascript:;" id="kt_login_signup" class="kt-login__account-link">Google 계정</a>
+								&nbsp;&nbsp;<span>권한 허가가 필요합니다.</span>
 							</div>
 						</div>
 					</div>
